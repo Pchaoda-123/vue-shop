@@ -62,7 +62,6 @@ export default {
           if (result.data.meta.status !== 200) {
             this.$message.error(result.data.meta.msg)
           } else {
-            console.log(result.data.data.token)
             window.sessionStorage.setItem('token', result.data.data.token)
             this.$router.push('/home')
             this.$message.success(result.data.meta.msg)
